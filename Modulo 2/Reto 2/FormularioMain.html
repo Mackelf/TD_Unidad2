@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reto 2. formulario</title>
+        <style>
+        form {
+            width: 350px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin:auto
+        }
+        .campo {
+            margin-bottom: 12px;
+        }
+        label {
+            font-weight: bold;
+        }
+        </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    </head>
+    
+    <body>
+            <h1 style="text-align: center;">Formulario de prueba de HTML5</h1>
+    
+            <form method="get" action="index.html">
+                <!--The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+                -->
+                <div class="campo">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"  required autofocus><br>
+                </div>  
+                
+                <div class="campo">
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required ><br>
+                </div>
+
+                <div class="campo">
+                    <label for="url">URL:</label><br>
+                    <input type="url" id="url" name="url" placeholder="Escribe la url de tu pagina web personal"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="tiempo">Tiempo</label>
+                    <input type="time" id="tiempo" name="tiempo"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="tiempolocal" id="tiempolocal">Fecha y hora</label>
+                    <input type="datetime-local" id="tiempolocal"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="mes">Mes:</label>
+                    <input type="month" id="mes"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="semana">Semana:</label>
+                    <input type="week" id="semana"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="numero">Numero:</label>
+                    <input type="number" id="numero" min="-10" max="10">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{8}" placeholder="569-xxxxxxxx"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="busqueda">Termino de busqueda</label>
+                    <input type="search" id="busqueda"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="color">Color favorito</label>
+                    <input type="color" id="color">
+                </div>
+
+                <div class="campo">
+                    <input type="reset" value="Limpiar formulario">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+
+
+
+
+
+            <!--<input type="button">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="submit">
+            <input type="tel">
+            <input type="text">
+            <input type="time">
+            <input type="url">
+            <input type="week">-->
+     </body>
+</html>

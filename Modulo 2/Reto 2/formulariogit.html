@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto 2. Formulario</title>
+    <style>
+        form {
+            width: 350px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin:auto
+        }
+        .campo {
+            margin-bottom: 12px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Formulario de prueba de HTML5</h1>
+    
+    <form method="get" action="index.html">
+
+        <!-- Campo Nombre -->
+        <div class="campo">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required autofocus>
+        </div>
+
+        <!-- Campo Correo -->
+        <div class="campo">
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <!-- Campo URL -->
+        <div class="campo">
+            <label for="url">URL:</label><br>
+            <input type="url" id="url" name="url" placeholder="Escribe la url de tu pagina web personal">
+        </div>
+
+        <hr>
+
+        <!-- A continuación, TODAS LAS CELDAS de la lista -->
+
+        
+        <div class="campo">
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha">
+            </div>
+        <div class="campo">
+            <label for="semana">Semana:</label><br>
+            <input type="week" id="semana" name="semana">
+        </div>  
+         <div class="campo">
+            <label for="mes">Mes:</label><br>
+            <input type="month" id="mes" name="mes">
+        </div>
+         <div class="campo">
+            <label for="hora">Hora:</label><br>
+            <input type="time" id="hora" name="hora">
+        </div>
+        
+        <div class="campo">
+            <label for="numero">Número del -10 al 10:</label><br>
+            <input type="number" id="numero" name="numero" min=-10 max=10>
+        </div>
+        
+        <div class="campo">
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono">
+        </div>
+         <div class="campo">
+            <label for="buscar">Buscar:</label><br>
+            <input type="search" id="buscar" name="buscar">
+        </div>
+        <div class="campo">
+            <label for="color">Color favorito:</label><br>
+            <input type="color" id="color" name="color">
+        </div>
+       
+        <div class="campo">
+            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+
+</body>
+</html>
