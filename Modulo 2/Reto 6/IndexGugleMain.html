@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reto 6 - Módulo 2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+
+
+    <body>
+        <h1>Reto 6 - Módulo 2</h1>
+        <a id="gugle" href="https://www.google.com">Ir a Google</a>
+
+        <script>
+            $(document).ready(function(){
+                $("#gugle").click(function(event){
+                    event.preventDefault();
+                    alert("Has hecho clic en el enlace a Google. Serás redirigido ahora.");
+                    window.location.href = $(this).attr("href");
+                });
+            });
+
+        </script>
+    </body>
+</html>
